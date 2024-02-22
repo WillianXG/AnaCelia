@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import styles from './NavBar.module.css';
 
-import Sliders from '../slider/slider';
-
 function NavBar() {
     const [isActive, setIsActive] = useState(false);
 
