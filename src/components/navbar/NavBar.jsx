@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './NavBar.module.css';
 
+import Sliders from '../slider/slider';
+
 function NavBar() {
     const [isActive, setIsActive] = useState(false);
 
@@ -22,7 +24,9 @@ function NavBar() {
                     </ul>
                 </nav>
             </header>
-            <main className={styles.hero}></main>
+            <main className={styles.hero}>
+                <Sliders></Sliders>
+            </main>
         </>
     );
 }
