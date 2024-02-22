@@ -25,7 +25,7 @@ function NavBar() {
                 </nav>
             </header>
             <main className={styles.hero}>
-                <Sliders></Sliders>
+
             </main>
         </>
     );
