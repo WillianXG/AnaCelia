@@ -1,0 +1,9 @@
+.mainContainer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer img{
+    width: 100%;
+}
