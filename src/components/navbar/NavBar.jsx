@@ -17,7 +17,7 @@ function NavBar() {
     <header className={styles.header}>
         <nav className={`${styles.nav} ${isActive ? styles.active : ''}`}>
           <a href="/" className={styles.logo}>
-            {/* Verifica se a tela é menor ou igual a 755px e decide entre o título e a imagem */}
+            {}
             {isScreenSmall ? (
               <img
                 className={styles.logoCell}

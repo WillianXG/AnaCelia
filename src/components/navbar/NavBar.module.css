@@ -32,6 +32,7 @@
 
 .logo {
   font-size: 15px;
+  margin: 15px;
 }
 
 .navList {
@@ -43,6 +44,8 @@
   color: white;
   padding-block: 16px;
 }
+
+
 
 .logo h1 {
   background-color: #D7A9A9;
