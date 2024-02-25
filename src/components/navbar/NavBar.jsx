@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { useMediaQuery } from 'react-responsive';
 
-
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
 
@@ -10,14 +9,17 @@ function NavBar() {
     setIsActive(!isActive);
   };
 
+  const closeNav = () => {
+    setIsActive(false);
+  };
+
   const isScreenSmall = useMediaQuery({ maxWidth: 755 });
 
   return (
     <>
-    <header className={styles.header}>
+      <header className={styles.header}>
         <nav className={`${styles.nav} ${isActive ? styles.active : ''}`}>
           <a href="/" className={styles.logo}>
-            {}
             {isScreenSmall ? (
               <img
                 className={styles.logoCell}
@@ -31,39 +33,38 @@ function NavBar() {
             )}
           </a>
           <button className={styles.hamburger} onClick={toggleNav}></button>
-        <ul className={styles.navList}>
-          <li>
-            <div className={styles.optBtn}>
-              <a href="#" className={styles.navBtn}>
-                Inicio
-              </a>
-            </div>
-          </li>
-          <li>
-            <div className={styles.optBtn}>
-              <a href="#" className={styles.navBtn}>
-                Sobre
-              </a>
-            </div>
-          </li>
-          <li>
-            <div className={styles.optBtn}>
-              <a href="#" className={styles.navBtn}>
-                Tratamentos
-              </a>
-            </div>
-          </li>
-          <li>
-            <div className={styles.optBtn}>
-              <a href="#" className={styles.navBtn}>
-                Contato
-              </a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+          <ul className={styles.navList}>
+            <li>
+              <div className={styles.optBtn}>
+                <a href="#" className={styles.navBtn} onClick={closeNav}>
+                  Inicio
+                </a>
+              </div>
+            </li>
+            <li>
+              <div className={styles.optBtn}>
+                <a href="#" className={styles.navBtn} onClick={closeNav}>
+                  Sobre
+                </a>
+              </div>
+            </li>
+            <li>
+              <div className={styles.optBtn}>
+                <a href="#" className={styles.navBtn} onClick={closeNav}>
+                  Tratamentos
+                </a>
+              </div>
+            </li>
+            <li>
+              <div className={styles.optBtn}>
+                <a href="#" className={styles.navBtn} onClick={closeNav}>
+                  Contato
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </>
   );
 }
