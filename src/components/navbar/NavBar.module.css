@@ -31,9 +31,7 @@
 .nav a {
   color: white;
   text-decoration: none;
-  background-color: transparent;
 }
-
 .logo {
   font-size: 15px;
   margin: 15px;
@@ -108,7 +106,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background: #D7A9A9;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
@@ -117,11 +115,14 @@
     align-items: center;
     gap: 0;
     pointer-events: none;
+    margin-bottom: 215px;
+
   }
 
   .navList a {
     font-size: 24px;
     opacity: 0;
+    background-color: #D7A9A9;
   }
 
   .navList li:nth-child(1) a {
