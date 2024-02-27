@@ -10,9 +10,6 @@
   padding-inline: 16px;
 }
 
-.logoCell{
-  margin: 15px;
-}
 
 .nav {
   width: 100%;
@@ -112,6 +109,8 @@
     transition: 1s ease-out;
     flex-direction: column;
     justify-content: space-around;
+    overflow: hidden;
+    overflow-y: hidden;
     align-items: center;
     gap: 0;
     pointer-events: none;
