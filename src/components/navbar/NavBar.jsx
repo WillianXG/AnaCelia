@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { useMediaQuery } from "react-responsive";
 import { Link } from 'react-router-dom'
+import logo from '../../images/logo.png'
 
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
@@ -24,7 +25,7 @@ function NavBar() {
             {isScreenSmall ? (
               <img
                 className={styles.logoCell}
-                src="https://w7.pngwing.com/pngs/984/903/png-transparent-psychology-logo-organization-psychology-symbol-logo-psychology-psychologist.png"
+                src="../images/logo.png"
                 alt="Logo"
                 width="50px"
                 height="50px"

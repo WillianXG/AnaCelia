@@ -1,10 +1,93 @@
-.mainContainer{
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    margin-left: 35px;
-}
+/* Adicione estilos globais conforme necessário */
 
-.mainContainer img{
-    width: 50%;
-}
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .mainContainer h1, p{
+    color: blue;
+  }
+  
+  .mainContainer {
+    margin-top: 10rem;
+    background-color: #D7A9A9;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgContainer {
+    margin-right: 20px;
+    margin-left: 1rem;
+  }
+  
+  .imgContainer img {
+    max-width: 100%; 
+  }
+  
+  .texto1Container {
+    flex-grow: 1;
+  }
+  
+  .Titulo {
+    text-align: center;
+  }
+
+  .mainContainer2 h1, p{
+    color: blue;
+  }
+  
+  .mainContainer2 {
+    margin-top: 10rem;
+    background-color: #D7A9A9;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .imgContainer2 {
+    margin-right: 20px;
+    margin-left: 1rem;
+  }
+  
+  .imgContainer2 img {
+    max-width: 100%; 
+  }
+  
+  .texto1Container2 {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+  
+  .Titulo2 {
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 755px) {
+    .mainContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imgContainer {
+      margin: 0;
+    }
+  
+    .imgContainer img {
+      margin-bottom: 1rem;
+    }
+    .mainContainer2 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imgContainer2 {
+      margin: 0;
+    }
+  
+    .imgContainer2 img {
+      margin-bottom: 1rem;
+    }
+  }
