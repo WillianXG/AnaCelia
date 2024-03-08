@@ -47,7 +47,7 @@ function Main() {
           <img src="https://sujeitoprogramador.com/wp-content/uploads/2023/05/coverfrt.png"></img>
         </div>
       </div>
-      
+
     </>
   );
 }
