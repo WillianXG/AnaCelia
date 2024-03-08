@@ -25,7 +25,7 @@ function NavBar() {
             {isScreenSmall ? (
               <img
                 className={styles.logoCell}
-                src="../images/logo.png"
+                src={logo}
                 alt="Logo"
                 width="50px"
                 height="50px"
