@@ -8,7 +8,9 @@ function Home(){
     return(
         <>
             <NavBar/>
+        <body>
             <Main/>
+            </body>
             <br></br>
             <br></br>
             <br></br>
@@ -17,14 +19,7 @@ function Home(){
             <br></br>
             <br></br>
             <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <Footer/> 
+            <Footer/>
         </>
     )
 }

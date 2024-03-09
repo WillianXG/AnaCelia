@@ -66,10 +66,14 @@ body {
   }
   
   @media screen and (max-width: 755px) {
+
     .mainContainer {
       flex-direction: column;
       text-align: center;
+      width: 100%;
     }
+
+   
   
     .imgContainer {
       margin: 0;
@@ -78,9 +82,11 @@ body {
     .imgContainer img {
       margin-bottom: 1rem;
     }
+
     .mainContainer2 {
       flex-direction: column;
       text-align: center;
+      width: 100%;
     }
   
     .imgContainer2 {

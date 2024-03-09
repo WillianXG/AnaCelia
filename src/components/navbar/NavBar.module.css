@@ -98,11 +98,18 @@
     margin: 15px;
   }
 
+  .nav{
+    width: 100%;
+  }
+  .header{
+    min-width: 100%;
+  }
+
   .navList {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 755px;
     height: 100%;
     background: #D7A9A9;
     clip-path: circle(100px at 90% -15%);
