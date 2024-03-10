@@ -109,7 +109,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 755px;
+    width: 100vw;
     height: 100%;
     background: #D7A9A9;
     clip-path: circle(100px at 90% -15%);

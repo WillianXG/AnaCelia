@@ -1,72 +1,64 @@
+/* footer.module.css */
+
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   background-color: #876a6a;
 }
 
 .mapArea {
-  width: 50%;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .map {
   border: 0;
   border-radius: 15px;
-  width: 100%; /* Make the map take full width */
+  width: 100%;
 }
 
 .contactArea {
-  width: 50%;
+  flex: 1;
+  margin-left: 1rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
 }
 
 form {
-  width: 100%; /* Adjust the form to take full width */
-  margin-top: 20px; /* Add some spacing above the form */
+  width: 100%;
+  margin-top: 20px;
 }
 
 .inputs {
   display: flex;
-  flex-direction: column; /* Stack inputs vertically on smaller screens */
+  flex-direction: column;
+  width: 100%; /* Garante que os inputs ocupem a largura total */
 }
 
-.input1 {
-  margin-right: 0; /* Remove the right margin for the first input */
-}
-
-label {
+.input1,
+.input2 {
   margin-bottom: 10px;
 }
 
-textarea {
-  width: 100%; /* Make the textarea take full width */
+label {
+  display: block;
 }
 
-@media (min-width: 755px) {
-  .footer {
-    flex-direction: column;
-    align-items: center;
+textarea {
+  width: 100%;
+}
+
+/* Adaptação para telas menores */
+@media screen and (max-width: 600px) {
+  .mapArea {
+    margin-right: 0;
+    order: 2; /* Muda a ordem, colocando .mapArea abaixo de .contactArea em telas menores */
   }
 
-  .mapArea,
   .contactArea {
-    width: 100%; /* Adjust both areas to take full width */
-    margin-bottom: 20px; /* Add some spacing between map and contact areas */
+    order: 1; /* Muda a ordem, colocando .contactArea acima de .mapArea em telas menores */
   }
-
-  form {
-    width: 50%; /* Adjust the form to take 50% width on larger screens */
-    margin-top: 0; /* Remove the top margin */
-  }
-
-  .inputs {
-    flex-direction: row; /* Align inputs in a row on larger screens */
-  }
-
-  .input1 {
-    margin-right: 20px;
-    }
 }
