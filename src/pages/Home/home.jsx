@@ -8,9 +8,7 @@ function Home(){
     return(
         <>
             <NavBar/>
-        <body>
             <Main/>
-            </body>
             <br></br>
             <br></br>
             <br></br>

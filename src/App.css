@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-color: #FFD6D7;  
+}
 
 a, h1, p{
   font-family: "Lora";
   font-size: 20px;
 }
 
+/* src/App.css */
+.bg-custom {
+  background-color: #FFD6D7; /* Define a cor de fundo personalizada */
+}
 
 
 
