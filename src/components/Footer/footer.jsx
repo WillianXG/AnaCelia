@@ -71,9 +71,9 @@ export default function App() {
                 acpnasci@gmail.com 
               </p>
               <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='secondary'fab icon='whatsapp' className='me-3' /> 
+                +55 21 96805-6868
               </p>
-              
             </MDBCol>
           </MDBRow>
         </MDBContainer>

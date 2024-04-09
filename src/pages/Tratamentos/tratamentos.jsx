@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "../../components/navbar/NavBar";
-
-
+import Footer from '../../components/Footer/footer'
+import Card from '../../components/Tratamentos/tratamentos'
+import "./tratamentos.css"
 function tratamento() {
   return (
     <>
@@ -9,14 +10,34 @@ function tratamento() {
         <NavBar />
       </header>
       <body>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
-        <h1>Tratamento</h1>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <Card/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </body>
+        <Footer/>
     </>
   );
 }
