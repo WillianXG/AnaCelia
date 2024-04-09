@@ -21,7 +21,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
       <MDBCard style={{ maxWidth: '200px', marginLeft: '90px' }}>
@@ -31,7 +31,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
       <MDBCard style={{ maxWidth: '200px', marginLeft: '90px' }}>
@@ -41,7 +41,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
       <MDBCard style={{ maxWidth: '200px', marginLeft: '90px' }}>
@@ -51,7 +51,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
       <MDBCard style={{ maxWidth: '200px', marginLeft: '90px' }}>
@@ -61,7 +61,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
       <MDBCard style={{ maxWidth: '200px', marginLeft: '90px' }}>
@@ -71,7 +71,7 @@ export default function App() {
           <MDBCardText>
             Some quick example text to build on the card title and make up the bulk of the card's content.
           </MDBCardText>
-          <MDBBtn href='#'>Button</MDBBtn>
+          
         </MDBCardBody>
       </MDBCard>
     </div>
