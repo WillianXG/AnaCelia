@@ -13,23 +13,14 @@ export default function App() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='facebook-f' />
+          <a href='https://w.app/ClinicaPsique' className='me-4 text-reset'>
+            <MDBIcon color='secondary' fab icon='whatsapp' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='twitter' />
-          </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='mailto:acpnasci2305@gmail.com' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
-          <a href='' className='me-4 text-reset'>
+          <a href='https://www.instagram.com/anacelianascimento.psi/' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='instagram' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
           </a>
         </div>
       </section>
@@ -53,23 +44,18 @@ export default function App() {
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='https://www.instagram.com/anacelianascimento.psi/' className='text-reset'>
                   Instragram
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='mailto:acpnasci2305@gmail.com' className='text-reset'>
                   Contato
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='https://w.app/ClinicaPsique' className='text-reset'>
                   WhatsApp
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
                 </a>
               </p>
             </MDBCol>
@@ -78,18 +64,16 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-                New York, NY 10012, US
+                Torre NorteShopping, 901 - Rio de Janeiro
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                info@example.com
+                acpnasci@gmail.com 
               </p>
               <p>
                 <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
               </p>
-              <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> + 01 234 567 89
-              </p>
+              
             </MDBCol>
           </MDBRow>
         </MDBContainer>
