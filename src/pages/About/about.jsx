@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../components/navbar/NavBar";
+import MainSobre from "../../components/mainSobre/mainSobre"; // Import corrigido: MainSobre em vez de mainSobre
 
 function Sobre() {
   return (
@@ -8,14 +9,18 @@ function Sobre() {
         <NavBar/>
       </header>
       <body>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
-        <h1>Sobre</h1>
+        <br/>
+        <br/>
+        <br/>
+        <MainSobre /> {/* Utilize o componente MainSobre aqui */}
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </body>
     </>
   );
