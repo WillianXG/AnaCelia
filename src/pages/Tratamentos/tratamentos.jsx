@@ -15,15 +15,15 @@ function tratamento() {
         <br/>
         <br/>
         <br/>
+        <h1>Alguns tratamentos que oferecemos</h1>
+        <br/>
+        <br/>
+
         <Card/>
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        
       </body>
         <Footer/>
     </>

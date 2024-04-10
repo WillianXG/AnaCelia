@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './tratamentos.css'; // Importe seu arquivo de estilos CSS
+import "./tratamentos.css"; // Importe seu arquivo de estilos CSS
 
 export default function App() {
   const settings = {
@@ -14,17 +14,34 @@ export default function App() {
   };
 
   return (
-    <Slider {...settings}>
-      <div>
-        <img src="https://www.des1gnon.com/wp-content/uploads/2020/03/Pexels-Banco-de-Imagens-gratis-Des1gnON.jpg" alt="" className="carousel-image" />
-      </div>
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ggv8EB3gMfABP5j8b_xL-L-RZpHso5AUoO-j_xfB8A&s" alt="" className="carousel-image" />
-      </div>
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6IcEkiYmWnnM6BOfAoaSka3Ni9xsv-stjHwO5L_c1QGLACxohLbmKYrmbQKvc3peATY&usqp=CAU" alt="" className="carousel-image" />
-      </div>
-      {/* Repeat the above divs for additional items */}
-    </Slider>
+    <>
+      <Slider {...settings}>
+        <div>
+          <img
+            src="https://www.des1gnon.com/wp-content/uploads/2020/03/Pexels-Banco-de-Imagens-gratis-Des1gnON.jpg"
+            alt=""
+            className="carousel-image"
+          />
+          <p className="carousel-text">Foto 1</p> {/* Adicione o texto "Foto 1" */}
+        </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ggv8EB3gMfABP5j8b_xL-L-RZpHso5AUoO-j_xfB8A&s"
+            alt=""
+            className="carousel-image"
+          />
+          <p className="carousel-text">Foto 2</p> {/* Adicione o texto "Foto 2" */}
+        </div>
+        <div>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE6IcEkiYmWnnM6BOfAoaSka3Ni9xsv-stjHwO5L_c1QGLACxohLbmKYrmbQKvc3peATY&usqp=CAU"
+            alt=""
+            className="carousel-image"
+          />
+          <p className="carousel-text">Foto 3</p> {/* Adicione o texto "Foto 3" */}
+        </div>
+        {/* Repeat the above divs for additional items */}
+      </Slider>
+    </>
   );
 }
