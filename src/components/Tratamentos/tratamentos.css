@@ -1,0 +1,8 @@
+
+  .carousel-image {
+    width: 300px; /* Defina a largura desejada para as imagens */
+    height: 200px; /* Defina a altura desejada para as imagens */
+    object-fit: cover; /* Isso garante que a imagem cubra todo o espaço especificado, mantendo a proporção */
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+    

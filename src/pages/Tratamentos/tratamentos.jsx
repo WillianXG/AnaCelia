@@ -19,7 +19,6 @@ function tratamento() {
         <br/>
         <br/>
         <br/>
-        <Card/>
         <br/>
         <br/>
         <br/>
