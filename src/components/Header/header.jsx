@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   MDBNavbar,
   MDBNavbarNav,
@@ -8,9 +8,10 @@ import {
   MDBContainer,
   MDBIcon,
   MDBCollapse,
-  MDBBtn
-} from 'mdb-react-ui-kit';
-import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+  MDBBtn,
+} from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
+import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function HDER() {
@@ -18,19 +19,24 @@ export default function HDER() {
 
   return (
     <header>
-
       <div
-        className='p-5 text-center bg-image'
-        style={{ backgroundImage: "url('https://mdbootstrap.com/img/new/slides/041.webp')", height: '400px' }}
+        className="p-5 text-center bg-image"
+        style={{
+          backgroundImage:
+            "url('https://mdbootstrap.com/img/new/slides/041.webp')",
+          height: "400px",
+        }}
       >
-        <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-          <div className='d-flex justify-content-center align-items-center h-100'>
-            <div className='text-white'>
-              <h1 className='mb-3'>Bem Vindo!</h1>
-              <h4 className='mb-3'>Agende uma consulta agora mesmo!</h4>
-              <MDBBtn tag="a" outline size="lg">
-                Saiba mais
-              </MDBBtn>
+        <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+          <div className="d-flex justify-content-center align-items-center h-100">
+            <div className="text-white">
+              <h1 className="mb-3">Bem Vindo!</h1>
+              <h4 className="mb-3">Agende uma consulta agora mesmo!</h4>
+              <Link to="/tratamentos">
+                <MDBBtn tag="button" outline size="lg">
+                  Saiba mais
+                </MDBBtn>
+              </Link>
             </div>
           </div>
         </div>
