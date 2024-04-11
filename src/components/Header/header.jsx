@@ -13,6 +13,7 @@ import {
 import { Link } from "react-router-dom";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import styles from './header.module.css'
 
 export default function HDER() {
   const [showBasic, setShowBasic] = useState(false);
@@ -33,7 +34,7 @@ export default function HDER() {
               <h1 className="mb-3">Bem Vindo!</h1>
               <h4 className="mb-3">Agende uma consulta agora mesmo!</h4>
               <Link to="/tratamentos">
-                <MDBBtn tag="button" outline size="lg">
+                <MDBBtn tag="button" outline size="lg"  className={styles.customButton}>
                   Saiba mais
                 </MDBBtn>
               </Link>

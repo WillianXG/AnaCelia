@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { useMediaQuery } from "react-responsive";
-import { Link } from 'react-router-dom'
-import logo from '../../images/logo.png'
+import { Link } from "react-router-dom";
+import logo from "../../images/logo.png";
 
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
@@ -21,7 +21,7 @@ function NavBar() {
     <>
       <header className={styles.header}>
         <nav className={`${styles.nav} ${isActive ? styles.active : ""}`}>
-          <a href="/" className={styles.logo}>
+          <a href="/" className={`${styles.logo} ${styles.customLink}`}>
             {isScreenSmall ? (
               <img
                 className={styles.logoCell}
@@ -38,30 +38,38 @@ function NavBar() {
           <ul className={styles.navList}>
             <li>
               <div className={styles.optBtn}>
-              <Link to="/" className={styles.navBtn} onClick={closeNav}>
+                <Link to="/" className={styles.navBtn} onClick={closeNav}>
                   Inicio
-                </Link> 
+                </Link>
               </div>
             </li>
             <li>
               <div className={styles.optBtn}>
-               <Link to="/sobre" className={styles.navBtn} onClick={closeNav}>
+                <Link to="/sobre" className={styles.navBtn} onClick={closeNav}>
                   Sobre
-                </Link> 
+                </Link>
               </div>
             </li>
             <li>
               <div className={styles.optBtn}>
-              <Link to="/tratamentos" className={styles.navBtn} onClick={closeNav}>
+                <Link
+                  to="/tratamentos"
+                  className={styles.navBtn}
+                  onClick={closeNav}
+                >
                   Tratamentos
-                </Link> 
+                </Link>
               </div>
             </li>
             <li>
               <div className={styles.optBtn}>
-              <Link to="/contato" className={styles.navBtn} onClick={closeNav}>
+                <Link
+                  to="/contato"
+                  className={styles.navBtn}
+                  onClick={closeNav}
+                >
                   Contato
-                </Link> 
+                </Link>
               </div>
             </li>
           </ul>

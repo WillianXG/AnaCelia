@@ -44,10 +44,24 @@
   padding-block: 16px;
 }
 
+.navList a {
+  text-decoration: none !important; 
+  color: white !important; /* Define a cor do texto como preto */
+}
 
+
+.customLink {
+  text-decoration: none !important; /* Remove a decoração de texto */
+  color: white !important; /* Herda a cor do texto do pai */
+}
+
+.logo {
+  text-decoration: none; /* Remove a decoração de texto */
+}
 
 .logo h1 {
   background-color: #D7A9A9;
+  text-decoration: none;
 }
 
 
