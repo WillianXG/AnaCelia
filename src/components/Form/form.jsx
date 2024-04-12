@@ -34,8 +34,11 @@ const MyForm = () => {
           })
             .then(response => response.json())
             .then(data => {
-              console.log(data);
-              setStatusMessage('Email enviado com sucesso!');
+              if (data.success) {
+                setStatusMessage('Email enviado com sucesso!');
+              } else {
+                setStatusMessage('Ocorreu um erro ao enviar o email. Por favor, tente novamente mais tarde.');
+              }
             })
             .catch(error => {
               console.error('Erro ao enviar email:', error);
