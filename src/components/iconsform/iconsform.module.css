@@ -17,8 +17,18 @@
   display: flex; /* Para manter os ícones em linha (horizontal) */
 }
 
-.iconContainer .icons .icon {
+.iconContainer .icons .icon1 {
   font-size: 30px; /* Defina o tamanho dos ícones aqui */
   margin: 0 10px;
-  color: white; /* Defina a cor dos ícones */
+  color: green; /* Defina a cor dos ícones */
+}
+.iconContainer .icons .icon2 {
+  font-size: 30px; /* Defina o tamanho dos ícones aqui */
+  margin: 0 10px;
+  color: rgb(233, 61, 90); /* Defina a cor dos ícones */
+}
+.iconContainer .icons .icon3 {
+  font-size: 30px; /* Defina o tamanho dos ícones aqui */
+  margin: 0 10px;
+  color: black; /* Defina a cor dos ícones */
 }

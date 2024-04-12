@@ -10,13 +10,13 @@ export default function IconsForm() {
       <h1>Caso prefira outros meios de comunicação</h1>
       <div className={styles.icons}>
         <a href="https://w.app/ClinicaPsique">
-          <MDBIcon fab icon="whatsapp" className={styles.icon} />
+          <MDBIcon fab icon="whatsapp" className={styles.icon1} />
         </a>
         <a href="https://www.instagram.com/anacelianascimento.psi/">
-          <MDBIcon fab icon="instagram" className={styles.icon} />
+          <MDBIcon fab icon="instagram" className={styles.icon2} />
         </a>
         <a href="https://seu-link-do-telefone">
-          <MDBIcon fas icon="phone-alt" className={styles.icon} />
+          <MDBIcon fas icon="phone-alt" className={styles.icon3} />
         </a>
       </div>
     </div>
