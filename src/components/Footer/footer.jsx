@@ -32,24 +32,24 @@ export default function App() {
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <MDBIcon color='secondary' icon='gem' className='me-3' />
-                Company name
+                Sobre Ana Célia
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
+              Ana Célia é uma psicóloga dedicada que oferece serviços de aconselhamento e terapia na Torre do Noteshopping.
+              Ana Célia está comprometida em ajudar seus pacientes a alcançar o bem-estar emocional e mental.
               </p>
             </MDBCol>
 
 
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <h6 className='text-uppercase fw-bold mb-4'>Link Utéis</h6>
               <p>
                 <a href='https://www.instagram.com/anacelianascimento.psi/' className='text-reset'>
                   Instragram
                 </a>
               </p>
               <p>
-                <a href='mailto:acpnasci2305@gmail.com' className='text-reset'>
+                <a href='/contato' className='text-reset'>
                   Contato
                 </a>
               </p>
@@ -68,7 +68,7 @@ export default function App() {
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                acpnasci@gmail.com 
+                contatositeanacelia@gmail.com
               </p>
               <p>
                 <MDBIcon color='secondary'fab icon='whatsapp' className='me-3' /> 
