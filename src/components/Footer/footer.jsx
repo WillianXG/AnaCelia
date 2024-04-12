@@ -18,16 +18,20 @@ export default function App() {
         <div className="me-5 d-none d-lg-block"></div>
         <div>
           <a href="https://w.app/ClinicaPsique" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="whatsapp" />
+             <MDBIcon
+                    fab
+                    icon="whatsapp"
+                    color="success"
+                  />
           </a>
           <a href="mailto:acpnasci2305@gmail.com" className="me-4 text-reset">
-            <MDBIcon color="secondary" fab icon="google" />
+            <MDBIcon color="primary" fab icon="google" />
           </a>
           <a
             href="https://www.instagram.com/anacelianascimento.psi/"
             className="me-4 text-reset"
           >
-            <MDBIcon color="secondary" fab icon="instagram" />
+            <MDBIcon color="danger" fab icon="instagram" />
           </a>
         </div>
       </section>
