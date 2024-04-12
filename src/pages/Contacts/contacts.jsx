@@ -3,6 +3,8 @@ import NavBar from "../../components/navbar/NavBar";
 import styles from './contacts.module.css'
 import Footer from  '../../components/Footer/footer'
 import MyForm from "../../components/Form/form";
+import IconsForm from "../../components/iconsform/iconsform"; // Importe o componente iconsForm com a primeira letra maiúscula
+
 function Contato() {
   return (
     <>
@@ -14,14 +16,11 @@ function Contato() {
       <br/>
       <br/>
       <br/>
+      <h1>Entre em contato conosco</h1>
       <br/>
       <br/>
       <MyForm/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <IconsForm/> {/* Use IconsForm como faria com qualquer outro componente */}
       </body>
       <footer>
         <Footer/>
