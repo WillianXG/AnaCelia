@@ -68,7 +68,7 @@ function NavBar() {
                   className={styles.navBtn}
                   onClick={closeNav}
                 >
-                  Contato
+                  Fale conosco
                 </Link>
               </div>
             </li>
