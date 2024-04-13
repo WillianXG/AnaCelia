@@ -47,10 +47,7 @@ export default function App() {
                 Sobre Ana Célia
               </h6>
               <p>
-                Ana Célia é uma psicóloga dedicada que oferece serviços de
-                aconselhamento e terapia na Torre do Noteshopping. Ana Célia
-                está comprometida em ajudar seus pacientes a alcançar o
-                bem-estar emocional e mental.
+              Ana Célia Neuropsicóloga dedicada e comprometida com seus pacientes. Sempre com alvo de alcançar o Bem estar.
               </p>
             </MDBCol>
 
