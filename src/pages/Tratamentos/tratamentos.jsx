@@ -18,7 +18,6 @@ function TratamentoPage() {
         <br/>
         <Card/>
         <br/>
-        <h1>Alguns tratamentos que oferecemos</h1>
         <br/>
         <br/>
         <br/>
