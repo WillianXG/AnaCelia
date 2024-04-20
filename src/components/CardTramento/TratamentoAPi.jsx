@@ -1,41 +1,34 @@
-import { useEffect, useState } from 'react'
-import CardTratamento from '../CardTramento/CardTramento'
-import styles from './TratamentoAPI.module.css'
-function Projetos() {
+import React, { useEffect, useState } from 'react';
+import CardTratamento from '../CardTramento/CardTramento';
+import styles from './TratamentoAPI.module.css';
 
-    const [ repositories, setRepositories ] = useState([])
+import tratamentosData from './tratamentos.json';
+
+function Projetos() {
+    const [tratamentos, setTratamentos] = useState([]);
 
     useEffect(() => {
-        const buscarRepositorios = async () => {
-            const response = await fetch('https://api.github.com/users/edsonmaia/repos')
-            const data = await response.json()
-            setRepositories(data)
-        }
-        buscarRepositorios()
-    }, [])
+        setTratamentos(tratamentosData.tratamentos_psicologicos);
+    }, []);
 
     return (
         <section className={styles.projetos}>
-            <h2>Projetos</h2>
-            {
-                repositories.length > 0 ? (
-                    <section className={styles.lista}>
-                        {
-                            repositories.map((repo) => (
-                                <CardTratamento
-                                    key={repo.id}
-                                    name={repo.name}
-                                    description={repo.description}
-                                />
-                            ))
-                        }
-                    </section>
-                ) : (
-                    <p>Carregando repositórios...</p>
-                )
-            }
+            <h2>Alguns tratamentos que oferecemos</h2>
+            {tratamentos.length > 0 ? (
+                <section className={styles.lista}>
+                    {tratamentos.map((tratamento, index) => (
+                        <CardTratamento 
+                            key={index} 
+                            nome={tratamento.nome} 
+                            descricao={tratamento.descricao} // Certifique-se de passar a descrição
+                        />
+                    ))}
+                </section>
+            ) : (
+                <p>Carregando tratamentos...</p>
+            )}
         </section>
-    )
+    );
 }
 
-export default Projetos
+export default Projetos;

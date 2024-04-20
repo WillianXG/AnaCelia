@@ -3,15 +3,16 @@ import NavBar from "../../components/navbar/NavBar";
 import Footer from '../../components/Footer/footer';
 import Card from '../../components/Tratamentos/tratamentos';
 import "./tratamentos.css";
-import CardTratamento from "../../components/CardTramento/CardTramento";
+import Projetos from "../../components/CardTramento/TratamentoAPi";
 
-function tratamento() {
+
+function TratamentoPage() {
   return (
     <>
       <header>
         <NavBar />
       </header>
-      <body>
+      <div>
         <br/>
         <br/>
         <br/>
@@ -21,14 +22,13 @@ function tratamento() {
         <br/>
         <br/>
         <br/>
-        <CardTratamento/>
         <br/>
+        <Projetos/>
         <br/>
-        
-      </body>
+      </div>
       <Footer/>
     </>
   );
 }
 
-export default tratamento;
+export default TratamentoPage;

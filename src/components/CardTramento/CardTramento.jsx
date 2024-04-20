@@ -1,17 +1,16 @@
-import styles from './CardTratamento.module.css'
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from 'react-icons/fa'
-import { BsArrowRight } from 'react-icons/bs'
+import styles from './CardTratamento.module.css';
+import { BsArrowRight } from 'react-icons/bs';
 
-function Card({ name, description}) {
+function CardTratamento({ nome, descricao }) { // Recebendo propriedades corretamente
     return (
         <section className={styles.card}>
-            <h3>{name}</h3>
-            <p>{description}</p>
+            <h3>{nome}</h3>
+            <p>{descricao}</p> {/* Exibindo a descrição */}
             <div className={styles.card_footer}>
-                    <BsArrowRight />
+                <BsArrowRight />
             </div>
         </section>
-    )
+    );
 }
 
-export default Card
+export default CardTratamento;
