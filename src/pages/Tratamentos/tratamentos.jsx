@@ -20,8 +20,6 @@ function TratamentoPage() {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
         <Projetos/>
         <br/>
       </div>
