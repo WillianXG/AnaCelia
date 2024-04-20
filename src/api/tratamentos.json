@@ -1,0 +1,60 @@
+{
+    "tratamentos_psicologicos": [
+      {
+        "nome": "Terapia Cognitivo-Comportamental (TCC)",
+        "descricao": "A Terapia Cognitivo-Comportamental (TCC) é uma abordagem terapêutica que se concentra na identificação e modificação de padrões de pensamento e comportamento que estão causando problemas na vida de uma pessoa. Ela ajuda os indivíduos a desenvolver habilidades para lidar com problemas emocionais e comportamentais, trabalhando para alterar crenças negativas e distorções cognitivas.",
+        "indicacoes": "Indicada para uma variedade de condições, incluindo depressão, ansiedade, transtorno obsessivo-compulsivo (TOC), transtorno de estresse pós-traumático (TEPT), entre outros.",
+        "tecnicas": [
+          "Identificação e modificação de pensamentos distorcidos",
+          "Desenvolvimento de habilidades de enfrentamento",
+          "Exposição gradual a situações temidas",
+          "Técnicas de relaxamento e respiração"
+        ]
+      },
+      {
+        "nome": "Psicoterapia Psicodinâmica",
+        "descricao": "A Psicoterapia Psicodinâmica é uma abordagem que explora como experiências passadas, traumas e relacionamentos afetam o presente. Ela se concentra na compreensão dos processos inconscientes e na relação terapêutica entre o terapeuta e o paciente.",
+        "indicacoes": "Indicada para indivíduos que desejam uma compreensão mais profunda de si mesmos, seus relacionamentos e padrões de comportamento.",
+        "tecnicas": [
+          "Análise do inconsciente",
+          "Exploração de transferência e contratransferência",
+          "Interpretação de sonhos e fantasias",
+          "Revisão de padrões de relacionamento"
+        ]
+      },
+      {
+        "nome": "Terapia Psicanalítica",
+        "descricao": "A Terapia Psicanalítica é uma abordagem que se baseia na teoria psicanalítica de Sigmund Freud. Ela explora os processos mentais inconscientes e a influência do passado na vida presente do indivíduo. O terapeuta ajuda o paciente a explorar os conteúdos do inconsciente, incluindo traumas e conflitos não resolvidos.",
+        "indicacoes": "Indicada para pessoas que desejam uma compreensão mais profunda de si mesmas e de seus padrões de comportamento. Também é útil para lidar com questões como depressão, ansiedade, problemas de relacionamento e trauma emocional.",
+        "tecnicas": [
+          "Associação livre",
+          "Interpretação de sonhos",
+          "Análise de resistências",
+          "Transferência e contratransferência"
+        ]
+      },
+      {
+        "nome": "Terapia Interpessoal (TIP)",
+        "descricao": "A Terapia Interpessoal (TIP) é uma abordagem focalizada nos relacionamentos interpessoais do paciente. Ela se concentra em identificar e abordar problemas de comunicação e padrões de relacionamento disfuncionais que podem contribuir para problemas emocionais. A TIP ajuda os indivíduos a desenvolver habilidades para resolver conflitos interpessoais e melhorar a qualidade de seus relacionamentos.",
+        "indicacoes": "Indicada para pessoas que estão enfrentando problemas de relacionamento, como conflitos familiares, dificuldades de comunicação, transições de vida significativas (como divórcio ou luto) e problemas interpessoais associados a distúrbios emocionais.",
+        "tecnicas": [
+          "Identificação de padrões de relacionamento",
+          "Melhoria da comunicação",
+          "Resolução de conflitos interpessoais",
+          "Desenvolvimento de habilidades sociais"
+        ]
+      },
+      {
+        "nome": "Terapia de Aceitação e Compromisso (ACT)",
+        "descricao": "A Terapia de Aceitação e Compromisso (ACT) é uma abordagem baseada em valores que ajuda os indivíduos a desenvolver uma relação mais saudável com seus pensamentos e emoções. Ela enfatiza a aceitação das experiências internas e a tomada de ações alinhadas com os valores pessoais, mesmo na presença de desconforto emocional.",
+        "indicacoes": "Indicada para pessoas que lutam com a evitação emocional, ansiedade, depressão, transtorno de estresse pós-traumático (TEPT), transtorno obsessivo-compulsivo (TOC) e outras questões emocionais.",
+        "tecnicas": [
+          "Mindfulness",
+          "Defusão cognitiva",
+          "Clarificação de valores",
+          "Compromisso com ação valiosa"
+        ]
+      }
+    ]
+  }
+  

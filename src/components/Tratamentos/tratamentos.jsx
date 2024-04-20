@@ -8,14 +8,16 @@ export default function App() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
-    slidesToShow: 1, // Mostra apenas um slide por vez
+    speed: 1500,
+    slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true, 
   };
+ 
 
   return (
     <>
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div>
           <img
             src="https://www.des1gnon.com/wp-content/uploads/2020/03/Pexels-Banco-de-Imagens-gratis-Des1gnON.jpg"

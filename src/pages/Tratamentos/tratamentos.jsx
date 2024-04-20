@@ -1,9 +1,10 @@
 import React from "react";
 import NavBar from "../../components/navbar/NavBar";
-import Footer from '../../components/Footer/footer'
-import Card from '../../components/Tratamentos/tratamentos'
-import Modal from '../../components/Modal/modal'
-import "./tratamentos.css"
+import Footer from '../../components/Footer/footer';
+import Card from '../../components/Tratamentos/tratamentos';
+import "./tratamentos.css";
+import CardTratamento from "../../components/CardTramento/CardTramento";
+
 function tratamento() {
   return (
     <>
@@ -14,18 +15,18 @@ function tratamento() {
         <br/>
         <br/>
         <br/>
+        <Card/>
         <br/>
         <h1>Alguns tratamentos que oferecemos</h1>
         <br/>
         <br/>
-
-        <Card/>
         <br/>
+        <CardTratamento/>
         <br/>
         <br/>
         
       </body>
-        <Footer/>
+      <Footer/>
     </>
   );
 }

@@ -1,6 +1,6 @@
 .carousel-image {
-    width: 1280px; /* Defina a largura padrão para as imagens */
-    height: 720px; /* Defina a altura padrão para as imagens */
+    width: 1580px; /* Defina a largura padrão para as imagens */
+    height: 810px; /* Defina a altura padrão para as imagens */
     object-fit: cover; /* Isso garante que a imagem cubra todo o espaço especificado, mantendo a proporção */
     margin: 0 auto; /* Centraliza horizontalmente */
 
@@ -23,12 +23,12 @@ p{
 
 /* Estilo para o botão de navegação anterior */
 .slick-prev {
-  left: 130px; /* Posiciona o botão à esquerda */
+  left: 30px; /* Posiciona o botão à esquerda */
 }
 
 /* Estilo para o botão de navegação seguinte */
 .slick-next {
-  right: 130px; /* Posiciona o botão à direita */
+  right: 30px; /* Posiciona o botão à direita */
 }
 
   @media (max-width: 767px) {
