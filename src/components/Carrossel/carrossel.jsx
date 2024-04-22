@@ -10,7 +10,7 @@ export default function Carrosel() {
     <>
     <div className="carousel-container">
     <h1 className="carousel-title">Conheça nossa clínica!</h1>
-      <MDBCarousel className="meu-carousel" showControls showIndicators touch={false}>
+      <MDBCarousel className="meu-carousel" showControls showIndicators={false} touch={false}>
         <MDBCarouselItem itemId={1}>
           <img src='https://mdbootstrap.com/img/new/slides/041.jpg' className='d-block w-100' alt='...' />
         </MDBCarouselItem>

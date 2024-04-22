@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./NavBar.module.css";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
@@ -14,21 +14,30 @@ import {
   MDBModalBody,
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
+
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
   const [basicModal, setBasicModal] = useState(false);
 
   const toggleOpen = () => setBasicModal(!basicModal);
+
   const toggleNav = () => {
     setIsActive(!isActive);
+    document.body.classList.toggle(styles.noScroll, !isActive); // Adiciona ou remove a classe noScroll
   };
-
 
   const closeNav = () => {
     setIsActive(false);
+    document.body.classList.remove(styles.noScroll); // Remove a classe noScroll
   };
 
   const isScreenSmall = useMediaQuery({ maxWidth: 755 });
+
+  useEffect(() => {
+    return () => {
+      document.body.classList.remove(styles.noScroll); // Certifique-se de remover a classe quando o componente é desmontado
+    };
+  }, []);
 
   return (
     <>
@@ -36,6 +45,7 @@ function NavBar() {
         <nav className={`${styles.nav} ${isActive ? styles.active : ""}`}>
           <a href="/" className={`${styles.logo} ${styles.customLink}`}>
             {isScreenSmall ? (
+              <Link>
               <img
                 className={styles.logoCell}
                 src={logo}
@@ -43,6 +53,8 @@ function NavBar() {
                 width="50px"
                 height="50px"
               />
+              </Link>
+              
             ) : (
               <h1>Psicóloga Ana Célia do Nascimento</h1>
             )}
