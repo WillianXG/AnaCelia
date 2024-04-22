@@ -1,76 +1,49 @@
-/* Estilo para o formulário */
+/* Adicione o seguinte CSS ao seu arquivo form.css */
+
+/* Container do formulário */
 .form-container {
-  width: 100%;
-  max-width: 400px; /* Largura máxima para manter o tamanho original */
+  padding: 20px;
+  max-width: 400px;
   margin: 0 auto;
-  display: flex; /* Alterado para flex */
-  flex-direction: column; /* Empilhar os elementos verticalmente */
-  justify-content: center;
-  align-items: center;
 }
 
-/* Estilo para os campos de entrada */
-.field-input {
+/* Campos do formulário */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box; /* Garante que o padding não afete a largura total */
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-/* Estilo para os campos de entrada com erro */
-.field-input.error {
-  border: 1px solid red;
-}
-
-/* Estilo para as mensagens de erro */
-.error-message {
+/* Mensagens de erro */
+.form-container .error {
   color: red;
-  font-size: 25px;
-  margin-top: -10px; /* Mova a mensagem de erro para cima dos campos de entrada */
+  font-size: 8px;
 }
 
-/* Estilo para o campo de mensagem */
-.message-input {
-  width: 100%;
-  height: 100px;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  box-sizing: border-box; /* Garante que o padding não afete a largura total */
-}
-
-/* Estilo para o campo de mensagem com erro */
-.message-input.error {
-  border: 1px solid red;
-}
-
-/* Estilo para o botão de envio */
-.submit-button {
-  background-color: #007bff;
+/* Botão de envio */
+.form-container button[type="submit"] {
+  background-color: #ff6b6b;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-  background-color: #0056b3;
+.form-container button[type="submit"]:hover {
+  background-color: #ff4f4f;
 }
 
-/* Estilo para o h1 */
-.success-message {
-  font-size: 35px;
-  color: green;
-  margin-top: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  .form-container {
-    width: 90%; /* Reduza a largura do formulário em telas menores */
-  }
+/* Mensagem de status */
+.form-container .status-message {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
 }

@@ -9,6 +9,7 @@ import {
   MDBModalBody,
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
+import MyForm from "../../components/Form/form";
 
 export default function App() {
   const [basicModal, setBasicModal] = useState(false);
@@ -22,17 +23,10 @@ export default function App() {
         <MDBModalDialog>
           <MDBModalContent>
             <MDBModalHeader>
-              <MDBModalTitle>Modal title</MDBModalTitle>
+              <MDBModalTitle style={{textAlign: 'center'}}>Fale conosco</MDBModalTitle>
               <MDBBtn className='btn-close' color='none' onClick={toggleOpen}></MDBBtn>
             </MDBModalHeader>
-            <MDBModalBody>...</MDBModalBody>
-
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={toggleOpen}>
-                Close
-              </MDBBtn>
-              <MDBBtn>Save changes</MDBBtn>
-            </MDBModalFooter>
+            <MDBModalBody><MyForm/></MDBModalBody>
           </MDBModalContent>
         </MDBModalDialog>
       </MDBModal>

@@ -35,6 +35,7 @@
 }
 
 .navList {
+  margin-top: 15px;
   background-color: #D7A9A9;
   display: flex;
   gap: 32px;
@@ -54,6 +55,7 @@
   text-decoration: none !important; /* Remove a decoração de texto */
   color: white !important; /* Herda a cor do texto do pai */
 }
+
 
 .logo {
   text-decoration: none; /* Remove a decoração de texto */

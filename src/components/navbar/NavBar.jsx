@@ -2,14 +2,27 @@ import React, { useState } from "react";
 import styles from "./NavBar.module.css";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
+import MyForm from "../../components/Form/form";
 import logo from "../../images/logo.png";
-
+import {
+  MDBBtn,
+  MDBModal,
+  MDBModalDialog,
+  MDBModalContent,
+  MDBModalHeader,
+  MDBModalTitle,
+  MDBModalBody,
+  MDBModalFooter,
+} from 'mdb-react-ui-kit';
 function NavBar() {
   const [isActive, setIsActive] = useState(false);
+  const [basicModal, setBasicModal] = useState(false);
 
+  const toggleOpen = () => setBasicModal(!basicModal);
   const toggleNav = () => {
     setIsActive(!isActive);
   };
+
 
   const closeNav = () => {
     setIsActive(false);
@@ -63,11 +76,7 @@ function NavBar() {
             </li>
             <li>
               <div className={styles.optBtn}>
-                <Link
-                  to="/contato"
-                  className={styles.navBtn}
-                  onClick={closeNav}
-                >
+                <Link onClick={toggleOpen}>
                   Fale conosco
                 </Link>
               </div>
@@ -75,6 +84,17 @@ function NavBar() {
           </ul>
         </nav>
       </header>
+      <MDBModal open={basicModal} setOpen={setBasicModal} tabIndex='-1'>
+        <MDBModalDialog>
+          <MDBModalContent>
+            <MDBModalHeader>
+              <MDBModalTitle style={{textAlign: 'center'}}>Fale conosco</MDBModalTitle>
+              <MDBBtn className='btn-close' color='none' onClick={toggleOpen}></MDBBtn>
+            </MDBModalHeader>
+            <MDBModalBody><MyForm/></MDBModalBody>
+          </MDBModalContent>
+        </MDBModalDialog>
+      </MDBModal>
     </>
   );
 }
