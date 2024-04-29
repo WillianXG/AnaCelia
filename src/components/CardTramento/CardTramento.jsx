@@ -7,7 +7,6 @@ function CardTratamento({ nome, descricao }) { // Recebendo propriedades correta
             <h3>{nome}</h3>
             <p>{descricao}</p> {/* Exibindo a descrição */}
             <div className={styles.card_footer}>
-                <BsArrowRight />
             </div>
         </section>
     );

@@ -12,7 +12,7 @@ function App() {
   return (
     <MDBContainer fluid className="bg-custom">
       <BrowserRouter>
-        <ScrollToTop /> {/* Adicione o componente ScrollToTop aqui */}
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/sobre' element={<Sobre />} />
