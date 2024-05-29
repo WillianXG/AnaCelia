@@ -1,5 +1,6 @@
-/* footer.css */
-
+.mdb-footer{
+  margin-left: 0;
+}
 /* Estilo para o contêiner dos ícones */
 .icon-container {
   display: flex; /* Usando flexbox para alinhar os ícones */
@@ -31,6 +32,7 @@
 /* Estilo para a cor de fundo do footer */
 .custom-bg-color {
   background-color: #D7A9A9; /* Cor de fundo desejada */
+ 
 }
 /* footer.css */
 
@@ -40,6 +42,7 @@
   flex-direction: column;
   align-items: flex-start; /* Alinhamento dos ícones à esquerda */
 }
+
 
 /* Estilo para cada parágrafo contendo um ícone */
 .icon-container p {

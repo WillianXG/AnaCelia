@@ -12,17 +12,14 @@ import {
 
 export default function App() {
   return (
-    <MDBFooter className="custom-bg-color text-center text-lg-start text-muted">
+    <div className="ftr">
+    <MDBFooter className="custom-bg-color text-center text-lg-start text-muted ">
       {/* Seção 1 */}
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         <div className="me-5 d-none d-lg-block"></div>
         <div>
           <a href="https://w.app/ClinicaPsique" className="me-4 text-reset">
-             <MDBIcon
-                    fab
-                    icon="whatsapp"
-                    color="success"
-                  />
+            <MDBIcon fab icon="whatsapp" color="success" />
           </a>
           <a href="mailto:acpnasci2305@gmail.com" className="me-4 text-reset">
             <MDBIcon color="primary" fab icon="google" />
@@ -37,7 +34,7 @@ export default function App() {
       </section>
 
       {/* Seção 2 */}
-      <section className="">
+      <section>
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
             {/* MDBCol 1 */}
@@ -47,14 +44,15 @@ export default function App() {
                 Sobre Ana Célia
               </h6>
               <p>
-              Ana Célia Neuropsicóloga dedicada e comprometida com seus pacientes. Sempre com alvo de alcançar o Bem estar.
+                Ana Célia Neuropsicóloga dedicada e comprometida com seus
+                pacientes. Sempre com alvo de alcançar o Bem estar.
               </p>
             </MDBCol>
 
             {/* MDBCol 2 */}
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Link Úteis</h6>
-              <div className="icon-container"> {/* Aplicando a mesma classe icon-container */}
+              <h6 className="text-uppercase fw-bold mb-4">Links Úteis</h6>
+              <div className="link-container">
                 <p>
                   <a
                     href="https://www.instagram.com/anacelianascimento.psi/"
@@ -69,10 +67,7 @@ export default function App() {
                   </a>
                 </p>
                 <p>
-                  <a
-                    href="https://w.app/ClinicaPsique"
-                    className="text-reset"
-                  >
+                  <a href="https://w.app/ClinicaPsique" className="text-reset">
                     WhatsApp
                   </a>
                 </p>
@@ -92,11 +87,7 @@ export default function App() {
                   contatositeanacelia@gmail.com
                 </p>
                 <p>
-                  <MDBIcon
-                    fab
-                    icon="whatsapp"
-                    className="icon whatsapp-icon"
-                  />
+                  <MDBIcon fab icon="whatsapp" className="icon whatsapp-icon" />
                   +55 21 96805-6868
                 </p>
               </div>
@@ -105,5 +96,7 @@ export default function App() {
         </MDBContainer>
       </section>
     </MDBFooter>
+
+    </div>
   );
 }
