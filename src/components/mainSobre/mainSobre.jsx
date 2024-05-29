@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./mainSobre.module.css";
-import ana4 from "../../images/ana4.jpeg"
-
 
 function mainSobre() {
   return (
@@ -25,11 +23,21 @@ function mainSobre() {
     </div>
 
     <p>
-      sado jadosjdd oajosdd aosdodkndasjads adskdsk adskads adskdsk
-      adskads adskdsk adskadsadskdsk adska dsadskdsk adskadsadskdsk
-      adskadsadskdsk adskadsadskdsk adskads
+    Oferecemos serviços de saúde de alta qualidade para toda a família. 
+    Nossos profissionais dedicados estão prontos para cuidar de você.
+      <br/>
+      <br/>
+      <br/>
+    ⏰ Horário de Funcionamento:
+    Segunda a Sexta: 8h às 20h
+    Sábado: 9h às 14h⏰
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    Venha nos visitar! Estamos localizados na Rua Av. Dom Hélder Câmara, 5200 - Cachambi, Rio de Janeiro - RJ, CEP 20771-004.
     </p>
-   
+    
   </div>
 </div>
 
@@ -51,9 +59,7 @@ function mainSobre() {
             adskadsadskdsk adskadsadskdsk adskads
           </p>
         </div>
-        <div className={styles.imgContainer2}>
-          <img src={ana4}></img>
-        </div>
+       
       </div>
 
     </>

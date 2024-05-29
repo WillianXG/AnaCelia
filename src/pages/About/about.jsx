@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "../../components/navbar/NavBar";
 import MainSobre from "../../components/mainSobre/mainSobre"; // Import corrigido: MainSobre em vez de mainSobre
-
+import Footer from "../../components/Footer/footer";
 function Sobre() {
   return (
     <>
@@ -21,6 +21,7 @@ function Sobre() {
         <br/>
         <br/>
         <br/>
+        <Footer/>
       </body>
     </>
   );

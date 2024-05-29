@@ -94,7 +94,7 @@
 
 .hamburger::after,
 .hamburger::before {
-  content: " ";
+  content: "";
   display: block;
   width: 30px;
   height: 3px;

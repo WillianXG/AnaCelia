@@ -7,13 +7,15 @@ body {
 
 /* Estilos para o mainContainer */
 .mainContainer {
-  margin-top: 5rem;
+  margin: 5rem;
   background-color: #D7A9A9;
   display: flex;
   align-items: center;
   padding: 20px;
-  gap: 20px; /* Reduz o espaço entre os elementos */
-  border-radius: 10px; /* Adiciona bordas arredondadas */
+  gap: 20px;
+  /* Reduz o espaço entre os elementos */
+  border-radius: 10px;
+  /* Adiciona bordas arredondadas */
 }
 
 .mainContainer h1,
@@ -23,17 +25,19 @@ body {
 }
 
 .imgContainer {
-  margin-right: 10px; /* Reduz a margem direita */
+  margin-right: 10px;
+  /* Reduz a margem direita */
   margin-left: 1rem;
 }
 
 .imgContainer img {
   max-width: 100%;
-  border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+  border-radius: 8px;
+  /* Adiciona bordas arredondadas à imagem */
 }
 
 
-.texto_1{
+.texto_1 {
   size: 1;
 }
 
@@ -43,13 +47,15 @@ body {
 
 /* Estilos para o mainContainer2 */
 .mainContainer2 {
-  margin-top: 5rem;
+  margin: 5rem;
   background-color: #D7A9A9;
   display: flex;
   align-items: center;
   padding: 20px;
-  gap: 20px; /* Reduz o espaço entre os elementos */
-  border-radius: 10px; /* Adiciona bordas arredondadas */
+  gap: 20px;
+  /* Reduz o espaço entre os elementos */
+  border-radius: 10px;
+  /* Adiciona bordas arredondadas */
 }
 
 .mainContainer2 h1,
@@ -59,13 +65,15 @@ body {
 }
 
 .imgContainer2 {
-  margin-right: 10px; /* Reduz a margem direita */
+  margin-right: 10px;
+  /* Reduz a margem direita */
   margin-left: 1rem;
 }
 
 .imgContainer2 img {
   max-width: 100%;
-  border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+  border-radius: 8px;
+  /* Adiciona bordas arredondadas à imagem */
 }
 
 .texto1Container2 {
@@ -81,34 +89,36 @@ body {
 
   .mainContainer,
   .mainContainer2 {
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-      padding: 10px;
-      gap: 10px; /* Reduz o espaço entre os elementos */
+    margin-top: 5rem;
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    /* Reduz o espaço entre os elementos */
   }
 
   .mainContainer h1,
   .mainContainer p,
   .mainContainer2 h1,
   .mainContainer2 p {
-      color: black;
-      font-size: larger;
+    color: black;
+    font-size: larger;
   }
-  .mainContainer2
 
-  .imgContainer,
+  .mainContainer2 .imgContainer,
   .imgContainer2 {
-      margin: 0;
+    margin: 0;
   }
 
   .imgContainer img,
   .imgContainer2 img {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .texto1Container,
   .texto1Container2 {
-      margin-left: 0;
+    margin-left: 0;
   }
 }
