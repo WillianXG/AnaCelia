@@ -1,15 +1,8 @@
-.navBtn {
-  text-decoration: none;
-  outline: 1px solid transparent;
-  outline: none  !important;
-
-}
-
+/* NavBar.module.css */
 
 .header {
   padding-inline: 16px;
 }
-
 
 .nav {
   width: 100%;
@@ -29,9 +22,15 @@
   color: white;
   text-decoration: none;
 }
+
 .logo {
   font-size: 15px;
   margin: 15px;
+}
+
+.logo h1 {
+  background-color: #D7A9A9;
+  text-decoration: none;
 }
 
 .navList {
@@ -46,30 +45,8 @@
 }
 
 .navList a {
-  text-decoration: none !important; 
-  color: white !important; /* Define a cor do texto como preto */
-}
-
-
-.customLink {
-  text-decoration: none !important; /* Remove a decoração de texto */
-  color: white !important; /* Herda a cor do texto do pai */
-}
-
-
-.logo {
-  text-decoration: none; /* Remove a decoração de texto */
-}
-
-.logo h1 {
-  background-color: #D7A9A9;
-  text-decoration: none;
-}
-
-
-.navList a {
-  background-color: #D7A9A9;
-  padding-block: 16px;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .optBtn a {
@@ -88,36 +65,38 @@
   display: none;
   border: none;
   background: none;
-  border-top: 3px solid #fff;
   cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+  z-index: 1;
+  margin: 15px;
 }
 
-.hamburger::after,
-.hamburger::before {
-  content: "";
+.hamburger span {
   display: block;
   width: 30px;
   height: 3px;
   background: #fff;
   margin-top: 5px;
   position: relative;
-  transition: 0.3s;
+  transition: transform 0.3s, opacity 0.3s, top 0.3s;
+}
+
+.hamburger span:first-child {
+  margin-top: 0;
 }
 
 @media (max-width: 755px) {
-
-
-
   .hamburger {
     display: block;
-    z-index: 1;
-    margin: 15px;
   }
 
-  .nav{
+  .nav {
     width: 100%;
   }
-  .header{
+
+  .header {
     min-width: 100%;
   }
 
@@ -129,41 +108,35 @@
     height: 100%;
     background: #D7A9A9;
     clip-path: circle(100px at 90% -15%);
-    transition: 1s ease-out;
+    transition: clip-path 1s ease-out;
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
-    overflow-y: hidden;
     align-items: center;
     gap: 0;
     pointer-events: none;
-    margin-bottom: 215px;
-
   }
- 
 
   .navList a {
     font-size: 24px;
     opacity: 0;
-    background-color: #D7A9A9;
   }
 
   .navList li:nth-child(1) a {
-    transition: 0.5s 0.2s;
+    transition: opacity 0.5s 0.2s;
   }
 
   .navList li:nth-child(2) a {
-    transition: 0.5s 0.4s;
+    transition: opacity 0.5s 0.4s;
   }
 
   .navList li:nth-child(3) a {
-    transition: 0.5s 0.6s;
+    transition: opacity 0.5s 0.6s;
   }
 
   .noScroll {
     overflow: hidden;
   }
-  
 
   .nav.active .navList {
     clip-path: circle(1500px at 90% -15%);
@@ -174,20 +147,17 @@
     opacity: 1;
   }
 
-  .nav.active .hamburger {
-    position: fixed;
-    top: 26px;
-    right: 16px;
-    border-top-color: transparent;
+  .nav.active .hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
   }
 
-  .nav.active .hamburger::before {
-    transform: rotate(135deg);
+  .nav.active .hamburger span:nth-child(2) {
+    opacity: 0;
   }
 
-  .nav.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
+  .nav.active .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -10px;
   }
 }
-
