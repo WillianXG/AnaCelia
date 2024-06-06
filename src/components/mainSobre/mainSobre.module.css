@@ -78,9 +78,13 @@
 @media screen and (max-width: 755px) {
   .mainContainer,
   .mainContainer2 {
+    margin-top: 5rem;
+    margin-left: 0;
     flex-direction: column;
     text-align: center;
-    margin-top: 5rem; /* Reduz a margem superior para dispositivos menores */
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
   }
 
   .mapContainer {
