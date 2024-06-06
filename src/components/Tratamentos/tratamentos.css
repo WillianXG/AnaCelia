@@ -1,8 +1,8 @@
 .carousel-image {
-    width: 1580px; /* Defina a largura padrão para as imagens */
-    height: 810px; /* Defina a altura padrão para as imagens */
-    object-fit: cover; /* Isso garante que a imagem cubra todo o espaço especificado, mantendo a proporção */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    width: 1580px; 
+    height: 810px; 
+    object-fit: cover; 
+    margin: 0 auto; 
 
   }
 
@@ -12,41 +12,38 @@ p{
     justify-content: center;
 }
 
-  /* Estilo para os botões de navegação */
+  
 .slick-prev,
 .slick-next {
-  position: absolute; /* Define a posição absoluta para os botões */
-  top: 50%; /* Posiciona os botões verticalmente no meio */
-  transform: translateY(-50%); /* Centraliza verticalmente */
-  z-index: 1; /* Garante que os botões estejam acima das imagens */
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 1; 
 }
 
-/* Estilo para o botão de navegação anterior */
+
 .slick-prev {
-  left: 30px; /* Posiciona o botão à esquerda */
+  left: 30px; 
 }
 
-/* Estilo para o botão de navegação seguinte */
+
 .slick-next {
-  right: 30px; /* Posiciona o botão à direita */
+  right: 30px; 
 }
 
   @media (max-width: 767px) {
     .carousel-image {
-      width: 300px; /* Mantenha a mesma largura para telas menores (celulares) */
-      height: 200px; /* Mantenha a mesma altura para telas menores (celulares) */
-      
+      width: 300px; 
+      height: 200px;
     }
 
     .slick-prev {
-        left: 10px; /* Posiciona o botão à esquerda */
+        left: 10px; 
       }
       
-      /* Estilo para o botão de navegação seguinte */
       .slick-next {
-        right: 10px; /* Posiciona o botão à direita */
+        right: 10px; 
       }
   }
     
-  /* Media query para telas menores que 768px (celulares) */
 

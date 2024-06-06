@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./tratamentos.css"; // Importe seu arquivo de estilos CSS
+import "./tratamentos.css";
 
 export default function App() {
   const settings = {
@@ -17,6 +17,9 @@ export default function App() {
 
   return (
     <>
+    <br></br>
+      <h1>Minha Clínica</h1>
+      <br/>
       <Slider {...settings} >
         <div>
           <img
@@ -42,7 +45,7 @@ export default function App() {
           />
           <p className="carousel-text">Foto 3</p> {/* Adicione o texto "Foto 3" */}
         </div>
-        {/* Repeat the above divs for additional items */}
+        
       </Slider>
     </>
   );

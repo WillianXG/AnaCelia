@@ -19,11 +19,15 @@
 
 .mainContainer,
 .mainContainer2 {
-  margin-top: 10rem;
-  background-color: #d7a9a9;
+  margin: 5rem;
+  background-color: #D7A9A9;
   display: flex;
   align-items: center;
-  min-height: 200px; /* Adicione uma altura mínima */
+  padding: 20px;
+  gap: 20px;
+  /* Reduz o espaço entre os elementos */
+  border-radius: 10px;
+  /* Adiciona bordas arredondadas */
 }
 
 .imgContainer,
@@ -42,6 +46,34 @@
 .Titulo2 {
   text-align: center;
 }
+
+
+.buttonContainer {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #eebbbb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #e7c7c7;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
 
 @media screen and (max-width: 755px) {
   .mainContainer,
