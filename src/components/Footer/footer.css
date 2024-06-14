@@ -1,15 +1,34 @@
-.mdb-footer{
+.mdb-footer {
   margin-left: 0;
 }
+
+.custom-footer {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.custom-footer .container-fluid,
+.custom-footer .container,
+.custom-footer .row,
+.custom-footer .col {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* Estilo para o contêiner dos ícones */
 .icon-container {
   display: flex; /* Usando flexbox para alinhar os ícones */
   flex-direction: column; /* Alinhamento vertical dos ícones */
+  align-items: flex-start; /* Alinhamento dos ícones à esquerda */
 }
 
 /* Estilo para cada parágrafo contendo um ícone */
 .icon-container p {
   margin-bottom: 10px; /* Espaço entre cada parágrafo */
+  display: flex;
+  align-items: center;
 }
 
 /* Estilo para os ícones */
@@ -22,6 +41,7 @@
 .link-container {
   display: flex; /* Usando flexbox para alinhar os links */
   flex-direction: column; /* Alinhamento vertical dos links */
+  align-items: flex-start; /* Alinhamento dos links à esquerda */
 }
 
 /* Estilo para cada parágrafo contendo um link */
@@ -32,39 +52,4 @@
 /* Estilo para a cor de fundo do footer */
 .custom-bg-color {
   background-color: #D7A9A9; /* Cor de fundo desejada */
- 
-}
-/* footer.css */
-
-/* Estilo para o contêiner dos ícones */
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinhamento dos ícones à esquerda */
-}
-
-
-/* Estilo para cada parágrafo contendo um ícone */
-.icon-container p {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-}
-
-/* Estilo para os ícones */
-.icon {
-  margin-right: 10px;
-  color: white;
-}
-
-/* Estilo para o contêiner dos links úteis */
-.link-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinhamento dos links à esquerda */
-}
-
-/* Estilo para cada parágrafo contendo um link */
-.link-container p {
-  margin-bottom: 10px;
 }
